@@ -1,10 +1,11 @@
 const canvas = document.getElementById("game-canvas");
 const ctx = canvas.getContext("2d");
+const frame = 10;
 
 window.onload = () => {
   document.addEventListener("keydown", keyPush);
 
-  setInterval(game, 1000 / 10); // fps
+  setInterval(game, 1000 / frame); // fps
 };
 
 let positionX = 0,
